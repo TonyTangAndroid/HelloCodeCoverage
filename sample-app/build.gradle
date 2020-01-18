@@ -1,6 +1,15 @@
 apply plugin: 'com.android.application'
 apply plugin: 'jacoco-android'
 
+jacoco {
+  toolVersion = "0.8.4"
+}
+
+tasks.withType(Test) {
+  jacoco.includeNoLocationClasses = true
+}
+
+
 android {
   compileSdkVersion configCompileSdkVersion
   buildToolsVersion configBuildToolsVersion
@@ -10,7 +19,7 @@ android {
     applicationId 'com.dicedmelon.example.android'
     targetSdkVersion configTargetSdkVersion
     versionCode 1
-    versionName project.version
+    versionName '0.1.1'
     testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
   }
 
