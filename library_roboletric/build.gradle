@@ -1,5 +1,5 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'jacoco'
 }
 
@@ -7,11 +7,11 @@ android {
 
     compileSdkVersion projectVersion.compileSdk
     defaultConfig {
-        applicationId "org.neotech.app"
         minSdkVersion projectVersion.minSdk
         targetSdkVersion projectVersion.compileSdk
         versionCode 1
         versionName "1.0"
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -40,16 +40,13 @@ android {
 }
 
 dependencies {
-    implementation project(":library_android")
-    implementation project(":library_roboletric")
-
     implementation projectDependency.appCompat
 
-    testImplementation projectDependency.robolectric
     testImplementation projectDependency.truth
-    testImplementation projectDependency.supportTestCore
-
     testImplementation projectDependency.junit
+    testImplementation projectDependency.supportTestCore
+    testImplementation projectDependency.robolectric
+    androidTestImplementation projectDependency.truth
     androidTestImplementation projectDependency.supportTestRunner
     androidTestImplementation projectDependency.espressoCore
     androidTestImplementation projectDependency.androidJUnit
