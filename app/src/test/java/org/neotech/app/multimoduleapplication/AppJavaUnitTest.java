@@ -5,7 +5,7 @@ import org.neotech.app.AppJava;
 import org.neotech.app.AppKotlin;
 import org.neotech.library.android.LibraryAndroidJava;
 import org.neotech.library.android.LibraryAndroidKotlin;
-
+@org.junit.Ignore("ignored")
 public class AppJavaUnitTest {
 
     @Test
