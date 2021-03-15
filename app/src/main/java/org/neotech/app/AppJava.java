@@ -23,11 +23,4 @@ public final class AppJava {
         return "touchedByJavaUnitTestInApp";
     }
 
-    public String touchedByKotlinInstrumentedTestInApp() {
-        return "touchedByKotlinInstrumentedTestInApp";
-    }
-
-    public String touchedByKotlinUnitTestInApp() {
-        return "touchedByKotlinUnitTestInApp";
-    }
 }

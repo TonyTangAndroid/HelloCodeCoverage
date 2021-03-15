@@ -23,14 +23,6 @@ public final class LibraryAndroidJava {
         return "touchedByJavaUnitTestInAndroidLibrary";
     }
 
-    public String touchedByKotlinInstrumentedTestInAndroidLibrary() {
-        return "touchedByKotlinInstrumentedTestInAndroidLibrary";
-    }
-
-    public String touchedByKotlinUnitTestInAndroidLibrary() {
-        return "touchedByKotlinUnitTestInAndroidLibrary";
-    }
-
     public String touchedByJavaInstrumentedTestInApp() {
         return "touchedByJavaInstrumentedTestInApp";
     }
@@ -39,11 +31,4 @@ public final class LibraryAndroidJava {
         return "touchedByJavaUnitTestInApp";
     }
 
-    public String touchedByKotlinInstrumentedTestInApp() {
-        return "touchedByKotlinInstrumentedTestInApp";
-    }
-
-    public String touchedByKotlinUnitTestInApp() {
-        return "touchedByKotlinUnitTestInApp";
-    }
 }
