@@ -53,4 +53,5 @@ dependencies {
     androidTestImplementation projectDependency.supportTestRunner
     androidTestImplementation projectDependency.espressoCore
     androidTestImplementation projectDependency.androidJUnit
+    androidTestImplementation projectDependency.truth
 }

@@ -2,18 +2,17 @@ package org.neotech.app.multimoduleapplication;
 
 import static androidx.lifecycle.Lifecycle.State.CREATED;
 import static androidx.lifecycle.Lifecycle.State.RESUMED;
-import static com.google.common.truth.Truth.assertThat;
 
 import androidx.test.core.app.ActivityScenario;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 import com.google.common.truth.Truth;
-import org.neotech.app.LoginActivity;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.robolectric.RobolectricTestRunner;
+import org.neotech.app.LoginActivity;
 
-@RunWith(RobolectricTestRunner.class)
-public class LoginActivityRobolectricTest {
+@RunWith(AndroidJUnit4.class)
+public class LoginActivityAndroidTest {
 
   private ActivityScenario<LoginActivity> scenario;
 
