@@ -10,17 +10,16 @@ ext {
             androidGradlePlugin: "com.android.tools.build:gradle:4.1.2",
 
             // Dependencies
-            appCompat          : "androidx.appcompat:appcompat:1.1.0",
+            appCompat          : "androidx.appcompat:appcompat:1.2.0",
 
             // Test dependencies
-            junit              : "junit:junit:4.13",
-            truth              : "com.google.truth:truth:1.0.1",
-            supportTestCore    : "androidx.test:core:1.2.0",
-            supportTestRunner  : "androidx.test:runner:1.2.0",
-            espressoCore       : "androidx.test.espresso:espresso-core:3.2.0",
-            androidJUnit       : "androidx.test.ext:junit:1.1.1",
+            junit              : "junit:junit:4.13.2",
+            truth              : "com.google.truth:truth:1.1.2",
+            supportTestCore    : "androidx.test:core:1.3.0",
+            supportTestRunner  : "androidx.test:runner:1.3.0",
+            espressoCore       : "androidx.test.espresso:espresso-core:3.3.0",
+            androidJUnit       : "androidx.test.ext:junit:1.1.2",
             robolectric        : "org.robolectric:robolectric:4.3.1",
-            truth              : "com.google.truth:truth:1.1",
             commonsCsv         : "org.apache.commons:commons-csv:1.8"
     ]
 }
