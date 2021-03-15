@@ -1,4 +1,4 @@
-package org.neotech.library.android;
+package org.neotech.app.multimoduleapplication;
 
 import static org.junit.Assert.assertNotNull;
 
@@ -6,7 +6,8 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-@Ignore("test code coverage")
+import org.neotech.library.android.PreUtil;
+
 @RunWith(AndroidJUnit4.class)
 public class PrefUtilTest {
 
