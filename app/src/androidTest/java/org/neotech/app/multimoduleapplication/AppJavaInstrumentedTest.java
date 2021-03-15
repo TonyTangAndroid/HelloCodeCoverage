@@ -15,6 +15,11 @@ public class AppJavaInstrumentedTest {
   }
 
   @Test
+  public void anotherTouchedByJavaInstrumentedTestInApp() {
+    AppJava.getInstance().anotherTouchedByJavaInstrumentedTestInApp();
+  }
+
+  @Test
   public void touchJavaCodeInLibrary() {
     LibraryAndroidJava.getInstance().touchedByJavaInstrumentedTestInApp();
   }

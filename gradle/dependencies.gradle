@@ -7,7 +7,7 @@ ext {
     projectDependency = [
 
             // Gradle Plugins
-            androidGradlePlugin: "com.android.tools.build:gradle:3.6.1",
+            androidGradlePlugin: "com.android.tools.build:gradle:4.1.2",
 
             // Dependencies
             appCompat          : "androidx.appcompat:appcompat:1.1.0",

@@ -19,6 +19,10 @@ public final class AppJava {
         return "touchedByJavaInstrumentedTestInApp";
     }
 
+    public String anotherTouchedByJavaInstrumentedTestInApp() {
+        return "anotherTouchedByJavaInstrumentedTestInApp";
+    }
+
     public String touchedByJavaUnitTestInApp() {
         return "touchedByJavaUnitTestInApp";
     }
