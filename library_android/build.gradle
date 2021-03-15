@@ -31,6 +31,7 @@ android {
     }
 
     testOptions {
+        execution "ANDROIDX_TEST_ORCHESTRATOR"
         unitTests {
             includeAndroidResources = true
         }
