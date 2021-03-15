@@ -46,7 +46,7 @@ dependencies {
     androidTestImplementation projectDependency.espressoCore
     androidTestImplementation projectDependency.androidJUnit
 
-//    //noinspection GradleDependency
-//    androidTestUtil 'androidx.test:orchestrator:1.3.0'
+    //noinspection GradleDependency
+    androidTestUtil 'androidx.test:orchestrator:1.3.0'
 
 }
