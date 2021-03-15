@@ -1,4 +1,4 @@
-package org.neotech.app.multimoduleapplication;
+package org.neotech.library.android;
 
 import static org.junit.Assert.assertNotNull;
 
