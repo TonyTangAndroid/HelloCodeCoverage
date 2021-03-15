@@ -1,13 +1,7 @@
 plugins {
     id 'com.android.application'
-    id "org.jetbrains.kotlin.android" apply false
     id 'jacoco'
 }
-
-// Applying it in the plugins block directly leads to:
-// UnknownDomainObjectException: Extension with name 'android' does not exist.
-// Not sure why... if anyone can tell me, perfect!
-apply plugin: 'kotlin-android'
 
 android {
 
@@ -35,7 +29,6 @@ android {
 dependencies {
     implementation project(":library_android")
 
-    implementation projectDependency.kotlinStdlibJdk7
     implementation projectDependency.appCompat
 
     testImplementation projectDependency.junit
