@@ -11,7 +11,6 @@ buildscript {
     }
     dependencies {
         classpath projectDependency.androidGradlePlugin
-        classpath 'org.jacoco:org.jacoco.core:0.8.6'
         classpath "nl.neotech.plugin:android-root-coverage-plugin:${neotech_coverage}"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
