@@ -4,7 +4,7 @@ buildscript {
     google()
   }
   dependencies {
-    classpath 'com.android.tools.build:gradle:4.2.2'
+    classpath 'com.android.tools.build:gradle:7.0.3'
     classpath 'org.jacoco:org.jacoco.core:0.8.6'
     classpath 'nl.neotech.plugin:android-root-coverage-plugin:1.4.0'
   }
