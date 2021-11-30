@@ -1,6 +1,6 @@
 package com.dicedmelon.example.android;
 
-import androidx.test.rule.ActivityTestRule;
+import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import org.junit.Rule;
 import org.junit.Test;
 
@@ -11,8 +11,8 @@ import static androidx.test.espresso.matcher.ViewMatchers.withText;
 
 public class MainActivityTest {
 
-  @Rule public ActivityTestRule<MainActivity> activityTestRule =
-      new ActivityTestRule<>(MainActivity.class);
+  @Rule public ActivityScenarioRule<MainActivity> activityTestRule =
+      new ActivityScenarioRule<>(MainActivity.class);
 
   @Test public void shouldShow42() {
     // then

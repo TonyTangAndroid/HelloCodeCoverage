@@ -1,6 +1,6 @@
 buildscript {
   repositories {
-    jcenter()
+    mavenCentral()
     google()
   }
   dependencies {
@@ -8,25 +8,9 @@ buildscript {
   }
 }
 
-ext {
-  configCompileSdkVersion = 28
-  configTargetSdkVersion = 28
-  configBuildToolsVersion = '28.0.3'
-
-  supportVersion = '28.0.0'
-  support = [annotations: "com.android.support:support-annotations:$supportVersion",
-             appCompat  : 'androidx.appcompat:appcompat:1.0.0']
-
-  assertJCore = 'org.assertj:assertj-core:1.7.1'
-  junit = 'junit:junit:4.12'
-
-  supportTest = [espressoCore: 'androidx.test.espresso:espresso-core:3.1.0',
-                 rules       : 'androidx.test:rules:1.1.1']
-}
-
 allprojects {
   repositories {
-    jcenter()
+    mavenCentral()
     google()
   }
 }
