@@ -5,7 +5,7 @@ on: [push]
 jobs:
   build:
 
-    runs-on: tony
+    runs-on: Linux
     steps:
       - name: checkout
         uses: actions/checkout@v2
