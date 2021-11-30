@@ -30,4 +30,8 @@ public class LoginActivity extends Activity {
   public TextView textView() {
     return tv_user_name;
   }
+
+  public TextView textView2() {
+    return tv_user_name;
+  }
 }
