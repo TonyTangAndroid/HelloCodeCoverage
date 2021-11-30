@@ -2,7 +2,7 @@ package org.neotech.app.multimoduleapplication;
 
 import org.junit.Test;
 import org.neotech.app.AppJava;
-import org.neotech.library.android.LibraryAndroidJava;
+import org.neotech.app.LibraryAndroidJava;
 
 public class AppJavaUnitTest {
 

@@ -1,4 +1,4 @@
-package org.neotech.library.android;
+package org.neotech.app;
 
 public final class LibraryAndroidJava {
 

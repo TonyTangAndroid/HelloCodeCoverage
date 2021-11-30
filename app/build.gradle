@@ -1,14 +1,13 @@
-plugins {
-    id 'com.android.application'
-}
+apply plugin: 'com.android.application'
 
 android {
 
-    compileSdkVersion projectVersion.compileSdk
+    compileSdkVersion 31
     defaultConfig {
         applicationId "org.neo.tech.demo.app"
-        minSdkVersion projectVersion.minSdk
-        targetSdkVersion projectVersion.compileSdk
+        minSdkVersion 22
+        //noinspection OldTargetApi
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -38,18 +37,8 @@ android {
 }
 
 dependencies {
-    implementation project(":library_android")
-    implementation project(":library_roboletric")
 
-    implementation projectDependency.appCompat
+    testImplementation 'com.google.truth:truth:1.1.3'
+    testImplementation 'junit:junit:4.13.2'
 
-    testImplementation projectDependency.robolectric
-    testImplementation projectDependency.truth
-    testImplementation projectDependency.supportTestCore
-
-    testImplementation projectDependency.junit
-    androidTestImplementation projectDependency.supportTestRunner
-    androidTestImplementation projectDependency.espressoCore
-    androidTestImplementation projectDependency.androidJUnit
-    androidTestImplementation projectDependency.truth
 }
