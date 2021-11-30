@@ -4,7 +4,9 @@
 
 
   <application>
-    <activity android:name="org.neotech.app.LoginActivity">
+    <activity
+      android:name="org.neotech.app.LoginActivity"
+      android:exported="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
