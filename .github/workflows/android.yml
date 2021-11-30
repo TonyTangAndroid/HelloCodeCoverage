@@ -18,7 +18,7 @@ jobs:
       - name: run java unit tests
         run: ./gradlew clean rootCodeCoverageReport
       - name: upload code coverage report
-        uses: codecov/codecov-action@v1.2.2
+        uses: codecov/codecov-action@v2.1.0
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           file: ./build/reports/jacoco.xml
