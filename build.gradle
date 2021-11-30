@@ -15,13 +15,13 @@ ext {
 
   supportVersion = '28.0.0'
   support = [annotations: "com.android.support:support-annotations:$supportVersion",
-             appCompat  : "com.android.support:appcompat-v7:$supportVersion"]
+             appCompat  : 'androidx.appcompat:appcompat:1.0.0']
 
   assertJCore = 'org.assertj:assertj-core:1.7.1'
   junit = 'junit:junit:4.12'
 
-  supportTest = [espressoCore: 'com.android.support.test.espresso:espresso-core:2.2.2',
-                 rules       : 'com.android.support.test:rules:0.5']
+  supportTest = [espressoCore: 'androidx.test.espresso:espresso-core:3.1.0',
+                 rules       : 'androidx.test:rules:1.1.1']
 }
 
 allprojects {
