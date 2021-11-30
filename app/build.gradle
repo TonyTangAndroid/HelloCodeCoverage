@@ -6,7 +6,7 @@ android {
 
     compileSdkVersion projectVersion.compileSdk
     defaultConfig {
-        applicationId "org.neotech.app"
+        applicationId "org.neo.tech.demo.app"
         minSdkVersion projectVersion.minSdk
         targetSdkVersion projectVersion.compileSdk
         versionCode 1
