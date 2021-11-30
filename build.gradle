@@ -5,12 +5,26 @@ buildscript {
   }
   dependencies {
     classpath 'com.android.tools.build:gradle:4.2.2'
+    classpath 'org.jacoco:org.jacoco.core:0.8.6'
+    classpath 'nl.neotech.plugin:android-root-coverage-plugin:1.4.0'
   }
 }
+
+
+plugins {
+  id "com.github.sherter.google-java-format" version "0.8"
+}
+
+apply from: "${rootDir}/gradle/google_java_format.gradle"
+apply from: "${rootDir}/gradle/root_code_coverage.gradle"
 
 allprojects {
   repositories {
     mavenCentral()
     google()
   }
+}
+
+task clean(type: Delete) {
+  delete rootProject.buildDir
 }

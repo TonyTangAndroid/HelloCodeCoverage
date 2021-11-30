@@ -1,12 +1,13 @@
 package com.dicedmelon.example.android;
 
-import org.junit.Test;
-
 import static com.google.common.truth.Truth.assertThat;
+
+import org.junit.Test;
 
 public class NumberProviderTest {
 
-  @Test public void shouldProvideProperNumber() {
+  @Test
+  public void shouldProvideProperNumber() {
     // given
     NumberProvider numberProvider = new NumberProvider();
 
