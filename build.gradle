@@ -7,7 +7,7 @@ buildscript {
 
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
     dependencies {
         classpath projectDependency.androidGradlePlugin
@@ -26,7 +26,7 @@ apply plugin: 'org.neotech.plugin.rootcoverage'
 allprojects {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
 }
 
