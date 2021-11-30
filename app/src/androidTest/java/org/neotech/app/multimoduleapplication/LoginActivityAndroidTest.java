@@ -11,6 +11,7 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.neotech.app.LoginActivity;
+
 @Ignore("test code coverage")
 @RunWith(AndroidJUnit4.class)
 public class LoginActivityAndroidTest {
@@ -27,13 +28,15 @@ public class LoginActivityAndroidTest {
   public void resumed_shouldShowTony() {
 
     scenario.moveToState(RESUMED);
-    scenario.onActivity(activity -> Truth.assertThat((activity.textView().getText())).isEqualTo("tony"));
+    scenario.onActivity(
+        activity -> Truth.assertThat((activity.textView().getText())).isEqualTo("tony"));
   }
 
   @Test
   public void paused_shouldClearName() {
 
     scenario.moveToState(CREATED);
-    scenario.onActivity(activity -> Truth.assertThat((activity.textView().getText())).isEqualTo(""));
+    scenario.onActivity(
+        activity -> Truth.assertThat((activity.textView().getText())).isEqualTo(""));
   }
 }
