@@ -44,5 +44,5 @@ rootCoverage {
     buildVariant "debug"
     executeTests true
     includeUnitTestResults true
-    includeAndroidTestResults true
+    includeAndroidTestResults false
 }
