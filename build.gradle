@@ -4,6 +4,9 @@ buildscript {
 
     // Import versions
     apply from: "gradle/dependencies.gradle"
+    ext {
+        kotlin_version = '1.8.0'
+    }
 
     repositories {
         google()
@@ -12,6 +15,7 @@ buildscript {
     dependencies {
         classpath projectDependency.androidGradlePlugin
         classpath "nl.neotech.plugin:android-root-coverage-plugin:${neotech_coverage}"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
