@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
 }
 
 android {
@@ -42,6 +43,7 @@ dependencies {
     implementation project(":library_roboletric")
 
     implementation projectDependency.appCompat
+    implementation projectDependency.androidxCoreKtx
 
     testImplementation projectDependency.robolectric
     testImplementation projectDependency.truth
