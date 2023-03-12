@@ -23,7 +23,7 @@ android {
     buildTypes {
         debug {
             enableUnitTestCoverage true
-            enableAndroidTestCoverage false
+            enableAndroidTestCoverage "${enable_android_test}".toBoolean()
         }
         release {
             minifyEnabled false
