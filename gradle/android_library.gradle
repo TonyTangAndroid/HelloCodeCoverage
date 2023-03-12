@@ -1,0 +1,48 @@
+apply from: "${rootDir}/gradle/jvm.gradle"
+
+android {
+
+    compileSdkVersion projectVersion.compileSdk
+    defaultConfig {
+        minSdkVersion projectVersion.minSdk
+        targetSdkVersion projectVersion.compileSdk
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        debug {
+            enableUnitTestCoverage "${enable_unit_test}".toBoolean()
+            enableAndroidTestCoverage "${enable_android_test}".toBoolean()
+        }
+    }
+
+    testOptions {
+        animationsDisabled true
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+}
+
+dependencies {
+
+    api "com.uber.rib:rib-base:0.13.2"
+    api "com.uber.rib:rib-android:0.13.2"
+    testImplementation "com.uber.rib:rib-test:0.13.2"
+    annotationProcessor "com.uber.rib:rib-compiler-test:0.13.2"
+
+    api projectDependency.appCompat
+    api projectDependency.androidxCoreKtx
+    
+    androidTestImplementation projectDependency.truth
+    androidTestImplementation projectDependency.supportTestRunner
+    androidTestImplementation projectDependency.espressoCore
+    androidTestImplementation projectDependency.androidJUnit
+}
+
+

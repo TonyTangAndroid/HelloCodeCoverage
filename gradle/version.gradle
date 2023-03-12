@@ -1,0 +1,6 @@
+ext {
+    retrofit = '2.7.2'
+    okhttp = '4.9.3'
+    rxjava = '2.2.21'
+    rxandroid = '2.1.0'
+}
