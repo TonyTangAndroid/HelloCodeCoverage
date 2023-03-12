@@ -1,6 +1,8 @@
 package com.demo.lib1;
 
-class President {
+public class President {
+
+  public President() {}
 
   public static String name() {
     testGeneration();
