@@ -2,29 +2,17 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
 }
+apply from: "${rootDir}/gradle/android_library.gradle"
 
 android {
-
-    compileSdkVersion projectVersion.compileSdk
     defaultConfig {
         applicationId "org.neo.tech.demo.app"
-        minSdkVersion projectVersion.minSdk
-        targetSdkVersion projectVersion.compileSdk
+        targetSdkVersion projectVersion.targetSdk
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-    }
-
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
     }
 
     buildTypes {
-        debug {
-            enableUnitTestCoverage true
-            enableAndroidTestCoverage "${enable_android_test}".toBoolean()
-        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
@@ -42,17 +30,4 @@ android {
 dependencies {
     implementation project(":library_android")
     implementation project(":library_roboletric")
-
-    implementation projectDependency.appCompat
-    implementation projectDependency.androidxCoreKtx
-
-    testImplementation projectDependency.robolectric
-    testImplementation projectDependency.truth
-    testImplementation projectDependency.supportTestCore
-
-    testImplementation projectDependency.junit
-    androidTestImplementation projectDependency.supportTestRunner
-    androidTestImplementation projectDependency.espressoCore
-    androidTestImplementation projectDependency.androidJUnit
-    androidTestImplementation projectDependency.truth
 }

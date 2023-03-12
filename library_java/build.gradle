@@ -1,8 +1,8 @@
-apply plugin: 'java-library'
-
-dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+plugins {
+    id 'java-library'
 }
-
-sourceCompatibility = JavaVersion.VERSION_1_8
-targetCompatibility = JavaVersion.VERSION_1_8
+apply from: "${rootDir}/gradle/jvm.gradle"
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
