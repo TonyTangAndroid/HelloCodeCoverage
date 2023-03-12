@@ -40,6 +40,13 @@ android {
 }
 
 dependencies {
+    annotationProcessor "com.uber.rib:rib-compiler-test:0.13.2"
+    implementation "com.uber.rib:rib-base:0.13.2"
+    implementation "com.uber.rib:rib-android:0.13.2"
+    testImplementation "com.uber.rib:rib-test:0.13.2"
+    annotationProcessor "com.uber.motif:motif-compiler:0.4.0-alpha02"
+    implementation "com.uber.motif:motif:0.4.0-alpha02"
+
     implementation projectDependency.appCompat
     implementation projectDependency.androidxCoreKtx
 
