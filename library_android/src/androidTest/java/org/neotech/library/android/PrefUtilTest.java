@@ -1,6 +1,6 @@
 package org.neotech.library.android;
 
-import static org.junit.Assert.assertNotNull;
+import static com.google.common.truth.Truth.*;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import org.junit.Test;
@@ -11,6 +11,6 @@ public class PrefUtilTest {
 
   @Test
   public void touchGetInstanceToEnsureFullCoverage() {
-    assertNotNull(new PreUtil().getName());
+    assertThat(new PreUtil().getName()).isNotNull();
   }
 }
