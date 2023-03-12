@@ -5,10 +5,10 @@ on: [ push ]
 jobs:
   build:
 
-    runs-on: ubuntu-18.04
+    runs-on: macos-latest
     steps:
       - name: checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: set up JDK 11
         uses: actions/setup-java@v2
         with:
@@ -16,8 +16,11 @@ jobs:
           java-version: '11'
       - name: Assembling app debug flavor
         run: ./gradlew :app:assembleDebug
-      - name: run java unit tests
-        run: ./gradlew rootCoverageReport -Penable_android_test=false -Penable_unit_test=true -Pcoverage
+      - name: run java unit and android tests
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 29
+          script: ./gradlew rootCoverageReport -Penable_android_test=true -Penable_unit_test=true -Pcoverage
       - name: upload code coverage report
         uses: codecov/codecov-action@v3
         with:
