@@ -28,6 +28,7 @@ android {
 }
 
 dependencies {
+    implementation project(":library_java")
     implementation project(":library_android")
     implementation project(":library_roboletric")
 }
