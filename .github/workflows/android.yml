@@ -19,7 +19,7 @@ jobs:
       - name: run java unit and android tests
         uses: reactivecircus/android-emulator-runner@v2.27.0
         with:
-          api-level: 29
+          api-level: 33
           script: ./gradlew rootCoverageReport -Penable_android_test=true -Penable_unit_test=true -Pcoverage
       - name: upload code coverage report
         uses: codecov/codecov-action@v3.1.1
